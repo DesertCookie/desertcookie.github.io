@@ -33,41 +33,87 @@
 		<meta name="msapplication-config" content="/res/browserconfig.xml">
 		<meta name="theme-color" content="#ffffff">
 		
-		<title>EMK | Example Mod by examplemods</title>
+		<title>EMK | Mods: Gameplay</title>
 		<meta name="description" content="">
 		<meta name="keywords" content="">
         
-		<style>
+        <style>
+            .grid {
+                grid-template-columns: 3.5fr 1fr;
+            }
+            
+            .grid .content section {
+                display: inline-block;
+                float: left;
+                
+                width: calc(33% - 45px);
+                height: 280px;
+                padding: 0 20px 0 20px;
+                
+                text-align: center;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+            
+            .grid .content section .modauthor {
+                margin: -15px 0 5px 0;
+            }
+            
+            .grid .content section .modauthor a {
+                color: rgba(127, 127, 127, 0.9);
+                
+                font-size: 12px;
+            }
+            
+            .grid .content section a {
+                color: black;
+                
+                text-decoration: none;
+            }
+            
             .grid .content section img {
-                float: right;
-                width: 35%;
-                margin: 15px 0 15px 0;
+                width: 100%;
+                margin-bottom: -5px;
             }
             
             .grid .sidebar {
                 text-align: center;
             }
             
-            .grid .sidebar img {
-                float: right;
-                width: 100%;
-                margin: 10px auto 10px auto;
-            }
-            
             .grid .sidebar a {
                 color: black;
             }
             
+            @media only screen and (max-width: 790px) {
+                .grid .content section {
+                    width: calc(50% - 47px);
+                    height: auto;
+                    max-height: 300px;
+                }
+            }
+            
             @media only screen and (max-width: 600px) {
-                .grid .content section img {
-                    display: none;
+                .grid {
+                    grid-template-columns: 100%;
+                    grid-template-areas: "header" "navigation" "sidebar" "content" "footer ";
+                }
+                
+                .grid .content section {
+                    width: calc(50% - 45px);
+                    margin: 0 5px 5px 0;
+                }
+                
+                .grid .content section:nth-of-type(even) {
+                    margin-right: 0px;
                 }
                 
                 .grid .sidebar {
                     display: inline;
-                }
+                    margin-left: 15%;
+                    margin-right: 15%;
+	           }
             }
-		</style>
+        </style>
 	</head>
 	
 	
@@ -92,10 +138,10 @@
 				<a target="_blank" rel="noopener" href="https://twitter.com/DesertCookie_"><img title="DesertCookie on Twitter" src="/res/mediaicons/twitter.png" href=""></a>
 			</div>
             <div class="mediaicon" id="email">
-				<a target="_blank" rel="noopener" href="mailto:equilinoxmodkit@gmail.com"><img title="Equilinox Mod Kit E-Mail" src="/res/mediaicons/e-mail.png" href=""></a>
+				<a href="mailto:equilinoxmodkit@gmail.com"><img title="Equilinox Mod Kit E-Mail" src="/res/mediaicons/e-mail.png" href=""></a>
 			</div>
 		</div>
-        
+		
         
 		<div class="grid">
 			
@@ -120,40 +166,20 @@
 			<!-- CONTENT -->
 			
 			<div class="content">
-				<section>
-                    <img src="/mods/examplemods/Example Mod/image.png">
-                    <h1>Main Section</h1>
-					<p>This is the main section of a mod's page. You are free to design this section however you like: Make different headings, add inline images or links. Just <a href="/mods/submit.html">send in</a> your text, formatted with html, together with your mod.</p>
-				</section>
-                <section>
-                    <h2>Downloads</h2>
-                    <h3>Example Mod 0.2.0 - <a href="">Download</a></h3>
-                    <ul>
-                        <li>Updated for Equilinox 1.1</li>
-                    </ul>
-                    <h3>Example Mod 0.1.0 - <a href="">Download</a></h3>
-                    <ul>
-                        <li>Updated for Equilinox 1.0</li>
-                    </ul>
-                </section>
+				<p style="text-align: center; padding: 50px auto 50px auto">No mods available!</p>
 			</div>
 			
 			<!-- SIDEBAR -->
 			
 			<div class="sidebar">
                 <article>
-                    <h2>Example Mod</h2>
-                    <img src="/mods/examplemods/Example Mod/preview.png">
-                    <p>Author: <a href="/mods/examplemods.html">examplemods</a><br>
-                       Created: 16.07.2018</p>
+                    <h1>Mods: Gameplay</h1>
+                    <h2>Authors</h2>
+                    <p>No authors available!</p>
                 </article>
                 <article>
-                    <p>Current version: 0.2.0<br>
-                       Last updated: 16.07.2018<br></p>
-                </article>
-                <article>
-                    <h3>Compatible Equilinox versions:</h3>
-                    <p><a href="">1.0</a>, <a href="">1.1</a> (examples)</p>
+                    <p><a href="/mods/submit.html">Submit a Mod</a><br>
+                       <a href="mailto:eqilinoxmodkit@gmail.com">Submit a Tag</a></p>
                 </article>
 			</div>
 			

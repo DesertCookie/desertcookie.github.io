@@ -33,29 +33,87 @@
 		<meta name="msapplication-config" content="/res/browserconfig.xml">
 		<meta name="theme-color" content="#ffffff">
 		
-		<title>EMK | Submit a Mod</title>
+		<title>EMK | Mods: Animals</title>
 		<meta name="description" content="">
 		<meta name="keywords" content="">
-		
-		<style>
-            .grid .sidebar {
-                background: none;
-                border: 0;
+        
+        <style>
+            .grid {
+                grid-template-columns: 3.5fr 1fr;
+            }
+            
+            .grid .content section {
+                display: inline-block;
+                float: left;
                 
+                width: calc(33% - 45px);
+                height: 280px;
+                padding: 0 20px 0 20px;
+                
+                text-align: center;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+            
+            .grid .content section .modauthor {
+                margin: -15px 0 5px 0;
+            }
+            
+            .grid .content section .modauthor a {
+                color: rgba(127, 127, 127, 0.9);
+                
+                font-size: 12px;
+            }
+            
+            .grid .content section a {
+                color: black;
+                
+                text-decoration: none;
+            }
+            
+            .grid .content section img {
+                width: 100%;
+                margin-bottom: -5px;
+            }
+            
+            .grid .sidebar {
                 text-align: center;
             }
             
-            .grid .sidebar img {
-                width: 80%;
-                margin-bottom: 5px;
+            .grid .sidebar a {
+                color: black;
             }
             
-            @media only screen and (max-width: 1000px) {
-                .grid .sidebar img {
-                    width: 100%;
+            @media only screen and (max-width: 790px) {
+                .grid .content section {
+                    width: calc(50% - 47px);
+                    height: auto;
+                    max-height: 300px;
                 }
             }
-		</style>
+            
+            @media only screen and (max-width: 600px) {
+                .grid {
+                    grid-template-columns: 100%;
+                    grid-template-areas: "header" "navigation" "sidebar" "content" "footer ";
+                }
+                
+                .grid .content section {
+                    width: calc(50% - 45px);
+                    margin: 0 5px 5px 0;
+                }
+                
+                .grid .content section:nth-of-type(even) {
+                    margin-right: 0px;
+                }
+                
+                .grid .sidebar {
+                    display: inline;
+                    margin-left: 15%;
+                    margin-right: 15%;
+	           }
+            }
+        </style>
 	</head>
 	
 	
@@ -80,10 +138,10 @@
 				<a target="_blank" rel="noopener" href="https://twitter.com/DesertCookie_"><img title="DesertCookie on Twitter" src="/res/mediaicons/twitter.png" href=""></a>
 			</div>
             <div class="mediaicon" id="email">
-				<a target="_blank" rel="noopener" href="mailto:equilinoxmodkit@gmail.com"><img title="Equilinox Mod Kit E-Mail" src="/res/mediaicons/e-mail.png" href=""></a>
+				<a href="mailto:equilinoxmodkit@gmail.com"><img title="Equilinox Mod Kit E-Mail" src="/res/mediaicons/e-mail.png" href=""></a>
 			</div>
 		</div>
-        
+		
         
 		<div class="grid">
 			
@@ -108,50 +166,21 @@
 			<!-- CONTENT -->
 			
 			<div class="content">
-                <section>
-                    <h2>Submitting a Mod</h2>
-                    <p>Submitting a mod is possible by sending us an email: <a href="mailto:equilinoxmodkit@gmail.com">equilinoxmodkit@gmail.com</a><br>
-                       The email must contain:</p>
-                    <ul>
-                        <li>Your name (pseudonym possible) that appears as author tag.</li>
-                        <li>The name of your mod.</li>
-                        <li>One or multiple 16:9 preview images (size: 640x360, format: png).</li>
-                        <li>A longe description for the mod page (you can submit this as html if you want).</li>
-                        <li>A shorter description (about 60 characters).</li>
-                        <li>What version of the Equilinox Mod Kit was used (<a target="_blank" rel="noopener" href="">how to find out</a>).</li>
-                    </ul>
-                    <p>Attach your files to the email.</p>
-                </section>
-                <section>
-                    <h2>The Author Page</h2>
-                    <p>Submitting information for your author page is possible by sending us an email: <a href="mailto:equilinoxmodkit@gmail.com">equilinoxmodkit@gmail.com</a><br>
-                      The email should contain:</p>
-                    <ul>
-                        <li>A profile picture (size: 180x180 or 320x320, format: png).</li>
-                        <li>One or two sentences about you (you can submit this as html if you want).</li>
-                        <li>When you stared playing Equilinox.</li>
-                        <li>Why you started modding.</li>
-                    </ul>
-                    <p>Attack your files to the email.</p>
-                </section>
-                <section>
-                    <h2>Updating a Mod or Site</h2>
-                    <ul>
-                        <li>Updating the downloadable file of a mod can be requested per email. Simply text us the name of the mod and the changelog, and finally attach the updated file(s).</li>
-                        <li>Updating a mod site or your author's page can be requested per email. Simply text us the name or URL of the to change page and the changes you want to have made.</li>
-                    </ul>
-                </section>
-                <section>
-                    <p style="font-size: 12px">Note, that by submitting your mod, you accept our <a href="/legalandprivacy.html">Privacy Policy</a>.</p>
-                    <p>If you have questions about one of the above processes or our privacy policy, please feel free to <a href="mailto:eqilinoxmodkit@gmail.com">contact us</a>.</p>
-                </section>
-            </div>
+				<p style="text-align: center; padding: 50px auto 50px auto">No mods available!</p>
+			</div>
 			
 			<!-- SIDEBAR -->
 			
 			<div class="sidebar">
-                <img src="/res/submit/mod panel.png">
-                <img src="/res/submit/author info.png">
+                <article>
+                    <h1>Mods: Animals</h1>
+                    <h2>Authors</h2>
+                    <p>No authors available!</p>
+                </article>
+                <article>
+                    <p><a href="/mods/submit.html">Submit a Mod</a><br>
+                       <a href="mailto:eqilinoxmodkit@gmail.com">Submit a Tag</a></p>
+                </article>
 			</div>
 			
 			<!-- FOOTER -->

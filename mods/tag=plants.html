@@ -33,26 +33,36 @@
 		<meta name="msapplication-config" content="/res/browserconfig.xml">
 		<meta name="theme-color" content="#ffffff">
 		
-		<title>EMK | DesertCookie</title>
+		<title>EMK | Mods: Plants</title>
 		<meta name="description" content="">
 		<meta name="keywords" content="">
         
         <style>
             .grid {
-                grid-template-columns: 3fr 1fr;
+                grid-template-columns: 3.5fr 1fr;
             }
             
             .grid .content section {
                 display: inline-block;
                 float: left;
                 
-                width: calc(50% - 47px);
-                height: 355px;
+                width: calc(33% - 45px);
+                height: 280px;
                 padding: 0 20px 0 20px;
                 
                 text-align: center;
                 text-overflow: ellipsis;
                 overflow: hidden;
+            }
+            
+            .grid .content section .modauthor {
+                margin: -15px 0 5px 0;
+            }
+            
+            .grid .content section .modauthor a {
+                color: rgba(127, 127, 127, 0.9);
+                
+                font-size: 12px;
             }
             
             .grid .content section a {
@@ -70,16 +80,15 @@
                 text-align: center;
             }
             
-            .grid .sidebar img {
-                width: 160px;
-                margin-top: 10px;
+            .grid .sidebar a {
+                color: black;
             }
             
             @media only screen and (max-width: 790px) {
                 .grid .content section {
                     width: calc(50% - 47px);
                     height: auto;
-                    max-height: 385px;
+                    max-height: 300px;
                 }
             }
             
@@ -103,11 +112,6 @@
                     margin-left: 15%;
                     margin-right: 15%;
 	           }
-               
-               .grid .sidebar img {
-                   width: 80px;
-                   margin-bottom: -10px;
-               }
             }
         </style>
 	</head>
@@ -134,7 +138,7 @@
 				<a target="_blank" rel="noopener" href="https://twitter.com/DesertCookie_"><img title="DesertCookie on Twitter" src="/res/mediaicons/twitter.png" href=""></a>
 			</div>
             <div class="mediaicon" id="email">
-				<a target="_blank" rel="noopener" href="mailto:equilinoxmodkit@gmail.com"><img title="Equilinox Mod Kit E-Mail" src="/res/mediaicons/e-mail.png" href=""></a>
+				<a href="mailto:equilinoxmodkit@gmail.com"><img title="Equilinox Mod Kit E-Mail" src="/res/mediaicons/e-mail.png" href=""></a>
 			</div>
 		</div>
 		
@@ -162,22 +166,20 @@
 			<!-- CONTENT -->
 			
 			<div class="content">
-				<p style="padding: 100px 0 100px 0; text-align: center">This user has no mods!</p>
+				<p style="text-align: center; padding: 50px auto 50px auto">No mods available!</p>
 			</div>
 			
 			<!-- SIDEBAR -->
 			
 			<div class="sidebar">
-				<article>
-					<h2>DesertCookie</h2>
-                    <img src="/mods/DesertCookie/profile.png">
-					<p>I am the current main developer of all Equilinox Mod Kit projects.<br>
-                        I also have a <a href="https://youtube.com/channel/UC8CEjPeMC6YjffzQv2q7dcA">YouTube</a> channel, where I make programming related videos and tutorials for the Equilinox Mod Kit.</p>
-                    <p>The first time I got my hands on Equilinox was May 2018, when I started supporting ThinMatrix on Patreon.</p>
-                    <p>Playing Equilinox showed me, that it was an awesome game, but I noticed there were some things I would have done differently...</p>
-				</article>
-                <article class="stats">
-                    <p>Joined: 16.07.2018</p>
+                <article>
+                    <h1>Mods: Plants</h1>
+                    <h2>Authors</h2>
+                    <p>No authors available!</p>
+                </article>
+                <article>
+                    <p><a href="/mods/submit.html">Submit a Mod</a><br>
+                       <a href="mailto:eqilinoxmodkit@gmail.com">Submit a Tag</a></p>
                 </article>
 			</div>
 			
